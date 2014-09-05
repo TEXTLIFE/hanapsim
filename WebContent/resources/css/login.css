@@ -1,0 +1,385 @@
+html{
+	/* fallback */
+			background-color: #C0C0C0;
+	/* Safari 4-5, Chrome 1-9 */
+			background: -webkit-gradient(radial, left center, 50, center center, 100, from(#C0C0C0), to(#F0F0F0 ));
+	/* Safari 5.1, Chrome 10+ */
+			background: -webkit-radial-gradient(circle, #C0C0C0, #F0F0F0 );
+	/* Firefox 3.6+ */
+			background: -moz-radial-gradient(circle, #C0C0C0, #F0F0F0);
+	/* IE 10 */
+			background: -ms-radial-gradient(circle, #C0C0C0, #F0F0F0);
+	/* Opera 11.10+ */
+			background: -o-linear-gradient(right, #C0C0C0, #F0F0F0);
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: auto auto;
+}
+
+#mainContainer {
+
+}
+
+#main {
+
+}
+
+
+#header {
+	/* fallback */
+	background-color: #FF9900;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(radial, center center, 0, center center, 0, from(#FF9900), to(#FF6600));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, #FF9900,#FF6600 ) !important;
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(circle, #FF9900, #FF6600);
+	/* IE 10 */
+	background: -ms-radial-gradient(circle, #FF9900, #FF6600);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(right, #FF9900, #FF6600);
+
+	border-bottom:none;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	/* border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px; */
+	height:80px;
+	margin:auto auto;
+	width: 1000px;
+	margin-top:5px;
+	margin-bottom:-10px;
+
+	
+
+}
+
+#middle {
+	/* fallback */
+	background-color: #660066;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(radial, center center, 0, center center, 0, from(#660066), to(#663366));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, #660066, #663366) !important;
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(circle, #660066, #663366);
+	/* IE 10 */
+	background: -ms-radial-gradient(circle, #660066, #663366);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(right, #660066, #663366);
+
+	border-bottom:none;
+	/* border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px; */
+	height:420px;
+	margin:auto auto;
+	width: 1000px;
+	
+}
+
+
+
+#footer {
+	/* fallback */
+	background-color: #FF9900;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(radial, center center, 0, center center, 0, from(#FF9900), to(#FF6600));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, #FF9900,#FF6600 ) !important;
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(circle, #FF9900, #FF6600);
+	/* IE 10 */
+	background: -ms-radial-gradient(circle, #FF9900, #FF6600);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(right, #FF9900, #FF6600);
+
+	border-bottom:none;
+	/* border-top-left-radius:8px;
+	border-top-right-radius:8px; */
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px;
+	height:125px;
+	margin:auto auto;
+	width: 1000px;
+	margin-top:5px;
+
+}
+
+
+#mainHomeLoginLogo{
+	top:30px;
+	position:relative;
+	padding-left:20px;
+}
+
+#upperLoginPage{
+	position:relative;
+ 	padding-left:390px;
+}
+
+#middleRegistrationPage{
+	padding-top:50px;
+	position:absolute;
+ 	padding-left:590px;
+	
+}
+
+
+.logo {
+	position:relative;
+	font-size:24px;
+	color: #FFFFFF;
+	font-family:verdana;
+	font-weight:bold;
+}
+
+.userName {
+	position:relative;
+	font-size:12px;
+	width:180px;
+	white-space:nowrap;
+}
+
+.password {
+	position:relative;
+	font-size:12px;
+	width:180px;
+	
+}
+
+#stunMe {
+	position:relative;
+	color: #EEEEEE;
+	font-size:12px;
+	
+}
+
+.loginCommandButton {
+	 height:26px;
+	 width:100px !important;
+}
+
+.happyToJoin{
+	font-size:20px;
+	color: #FFFFFF;
+	position:absolute;
+	padding-top:.5em;
+	padding-left:592px; 
+}
+
+#openingSoon{
+	font-size:25px;
+	color: #FFFFFF;
+	position:absolute;
+	padding-top:80px;
+	padding-left:40px; 
+}
+
+#searchHandTrust{
+	font-size:30px;
+	color: #FFFFFF;
+	position:absolute;
+	padding-top:300px;
+	padding-left:40px; 
+}
+
+#simcardBCContact{
+	font-size:12px;
+	color: #FFFFFF;
+	position:absolute;
+	padding-top:340px;
+	padding-left:80px;
+	
+}
+
+.simcardBCContact1{
+	position:absolute;
+	padding-top:10px;
+	padding-left:30px;
+	
+}
+
+.simcardBCContact2{
+	position:absolute;
+	padding-top:10px;
+	padding-left:140px;
+	
+}
+
+.simcardBCContact3{
+	position:absolute;
+	padding-top:10px;
+	padding-left:280px;
+	
+}
+
+
+.simLogo{
+	position:absolute;
+	padding-top:110px;
+	padding-left:450px; 
+}
+
+.regMobile{
+	font-size:13px;
+	width:160px;
+	height:15px;
+	display:block;
+	top:-15px;
+	position:relative;
+}
+
+.regEmail{
+	font-size:13px;
+	width:160px;
+	height:15px;
+	display:block;
+	position:relative;
+	right:-172px; 
+	top:-40px;
+}
+
+.regFirstName{
+	font-size:13px;
+/* 	width:160px; */
+	height:15px;
+	display:block;
+	padding-left:595px; 
+}
+
+.regLastName{
+	font-size:13px;
+	width:160px;
+	height:15px;
+	display:block;
+	position:relative;
+	right:-172px; 
+	top:-25px;
+}
+
+
+.regValidation{
+	font-size:14px;
+	height:20px;
+	display:block;
+}
+
+
+.regPassword {
+	font-size:13px;
+	width:160px;
+	height:15px;
+	display:block;
+	position:relative;
+	right:-171px; 
+	top:-30px;
+}
+
+.regOccupation {
+	font-size:13px;
+	width:160px;
+	height:15px;
+	display:block;
+	position:relative;
+	right:1px; 
+	top:-55px;
+}
+
+.regBirthDate {
+	font-size:12px;
+	width:150px;
+/* 	height:15px; */
+	display:block;
+	position:relative;
+	right:1px; 
+	top:-45px;
+}
+
+.regGender {
+	font-size:13px;
+/* 	width:180px; */
+/* 	height:15px; */
+	display:block;
+	position:relative;
+	left:170px; 
+	top:-72px;
+}
+
+
+.regPasswordConfirm{
+	font-size:14px;
+	height:20px;
+	display:block;
+
+}
+
+.regDoneExcited{
+	font-size:13px;
+	color: #FFFFFF;
+	width: 150px;
+	left:-82px; 
+	top:20px;
+}
+
+
+#loginImage {
+   	position: relative;
+    right: 200;
+    left: 0;
+    margin: 300 auto;
+    top: 5em;
+    /* padding-right: 35px; */
+}
+
+/* the login: username and password */
+#login {
+	top: 5em;
+	/* position: fixed; */
+	color: #EEEEEE;
+	/* right: 0;
+    left: 0; */
+	/* margin-right: auto;
+	margin-left: auto; */
+	/* padding-left: 5px; */
+	/* z-index:100; */
+	font-size:11px;
+/* 	width: 90%; */
+}
+	
+
+
+.version {
+	color: #303030;
+	float: right;
+	font-size: 10px;
+	position: relative;
+	top: 140px;
+}
+
+#footerContainer {
+	bottom: 0;
+	color: black;
+	height: 40px;
+	text-align: center;
+	width: 100%;
+	z-index: 100%;
+	height: 10px;
+}
+
+.ui-button {
+	background-color: #FF6600 !important;
+	backgrounnd: none repeat scroll 0% 0% #FF6600 !important;
+	color: rgb(250,250,250) !important;
+}
+
+.ui-button:hover {
+	background-color: rgb(105,105,105) !important;
+	backgrounnd: none repeat scroll 0% 0% rgb(105,105,105) !important;
+	color: #FF6600 !important;
+	border: 1px solid rgb(105,105,105) !important;
+}

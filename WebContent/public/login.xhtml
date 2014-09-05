@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets" 
+	xmlns:pe="http://primefaces.org/ui/extensions">
+
+<h:head>
+	<h:outputStylesheet library="css" name="login.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- 	<link rel="shortcut icon" type="image/x-icon" href="http://www.picpanda.com/images/8sstwwkfqd267qjyec8s.png" /> -->
+</h:head>
+
+<h:body >
+		<div id="header">
+			<h:form id="loginForm">
+				<p:focus context="loginForm" />
+				<p:growl showDetail="false" life="3000" />
+				
+			<div id="mainHomeLoginLogo">
+				<p:outputLabel value="hanapSIM" styleClass="logo"/>	
+<!-- 				<p:commandButton actionListener="#{subcriberPicturesMB.imageNoPic}" ajax="false" value="testImage" style="width:181px"/> -->
+				
+			</div>	
+			
+			
+			<div id="upperLoginPage">
+				
+				<p:inputText value="#{loginMB.simNumber}" label="sim number"
+					id="simNumber" required="true" styleClass="userName" maxlength="12" requiredMessage="Check SIM Number. Must be 12 digits: 639991110000">
+					<f:validateLength minimum="12" />
+					<pe:keyFilter for="simNumber" mask="num"/>
+					<p:watermark for="simNumber" value="SIM Number" />  
+				</p:inputText>
+				<h:outputText value="&#160;&#160;"/>
+				<p:password value="#{loginMB.password}" label="Password"
+					id="senha" required="true" autocomplete="off" styleClass="password" requiredMessage="Check Password. Password is required minimum of 6">
+					<f:validateLength minimum="6" />
+					<p:watermark for="senha" value="Password" /> 
+				</p:password>
+				<h:outputText value="&#160;&#160;"/>
+				<p:commandButton action="#{loginMB.login}" ajax="false" value="stun me" styleClass="loginCommandButton"/>
+				<h:outputText value="&#160;&#160;"/>
+				<p:commandLink action="#{loginMB.displayForgotPassword}"
+					style="color:black;" ajax="false" immediate="true">
+					<h:outputText value="forgot password?" style="color:black;font-size:12px;" />
+				</p:commandLink>
+			</div>	
+
+			</h:form>
+			
+		</div>	
+		<br />
+		<div id="middle">
+<!-- 			<h:graphicImage name="images/loginLogo.png" styleClass="simLogo"/> -->
+			
+			<h:form id="registrationForm">
+			<div id="openingSoon">
+				<p:outputLabel value="Web Sneak Preview:" />
+				<br />
+				<p:outputLabel value="a new kind of mobile service," />
+				<br />
+				<p:outputLabel value="never yet existed, till now." />
+			</div>
+			<div id="searchHandTrust">
+				<p:outputLabel value="SEARCH : VALIDATE : TRUST" />
+			</div>
+			
+			<p:outputLabel value="Happy to JOIN!" styleClass="happyToJoin"/>
+			<div id="middleRegistrationPage">
+		
+				<p:inputText value="#{joinMB.userDetail.firstName}" label="firstname"
+					id="firstName" required="true" requiredMessage="Check First Name. Must be alpha characters only." style="width:172px">
+					<f:validateLength minimum="2" />
+					<pe:keyFilter for="firstName" mask="alpha"/>
+					<p:watermark for="firstName" value="First Name" />  
+				</p:inputText>
+				<br />
+				<br />
+				<p:inputText value="#{joinMB.userDetail.lastName}" label="lastname"
+					id="lastName" required="true" requiredMessage="Check Last Name. Must be alpha characters only." style="width:172px">
+					<f:validateLength minimum="2" />
+					<pe:keyFilter for="lastName" mask="alpha"/>
+					<p:watermark for="lastName" value="Last Name" />  
+				</p:inputText>
+				<br />
+				<br />
+				<p:inputText value="#{joinMB.user.simNumber}" label="sim number"
+					id="joinSimNumber" required="true" maxlength="12" requiredMessage="Check SIM Number. Must be 12 digits: 639991110000" style="width:172px">
+					<f:validateLength minimum="12" />
+					<pe:keyFilter for="joinSimNumber" mask="num"/>
+					<p:watermark for="joinSimNumber" value="SIM Number" />
+					<p:tooltip id="toolTipSimNumber" for="joinSimNumber" value="Example format: 63 999 888 7777" showEffect="clip" hideEffect="explode" trackMouse="true"/>  
+				</p:inputText>
+				<br />
+				<br />
+				<p:inputText value="#{joinMB.userDetail.email}" label="email"
+					id="joinEmail" required="true" requiredMessage="Check email." style="width:172px">
+					<f:validateLength minimum="7" />
+					<p:watermark for="joinEmail" value="Email" />  
+				</p:inputText>
+				<br />
+				<br />
+				<p:password value="#{joinMB.user.password}" label="Password"
+					id="initialPassword" required="true" autocomplete="off" requiredMessage="Check Password. Password is required minimum of 6" style="width:172px">
+					<f:validateLength minimum="6" />
+					<p:watermark for="initialPassword" value="New Password" />
+					<p:tooltip id="toolTipPassword" for="initialPassword" value="Minimum of 6 characters" showEffect="clip" hideEffect="explode" trackMouse="true"/> 
+				</p:password>
+				<br />
+				<br />
+				<p:inputText value="#{joinMB.userDetail.occupation}" label="occupation"
+					id="occupation" required="true" requiredMessage="Check Occupation. Must be alpha characters only." style="width:172px">
+					<f:validateLength minimum="2" />
+					<pe:keyFilter for="occupation" mask="alpha"/>
+					<p:watermark for="occupation" value="Occupation" />  
+				</p:inputText>
+				<br />
+				<br />
+        		<p:calendar id="regBirthDate" value="#{joinMB.userDetail.birthDate}" effect="fold" required="true" requiredMessage="Please enter birthdate." size="26" >
+        			<p:watermark for="regBirthDate" value="Birth Date" /> 
+        			<p:tooltip id="toolTipBirthDate" for="regBirthDate" value="Month/Date/Year: 12/23/74" showEffect="clip" hideEffect="explode" trackMouse="true"/>	 
+        		</p:calendar>	
+       			<br />
+       			<br />
+		        <p:selectOneMenu id="regGender" value="#{joinMB.userDetail.gender}" required="true" requiredMessage="Please enter gender." style="width:179px" effect="fold">
+		        	<f:selectItem itemLabel="Gender" itemValue="" />
+		            <f:selectItem itemLabel="Male" itemValue="Male" />
+		            <f:selectItem itemLabel="Female" itemValue="Female" />
+		            <f:selectItem itemLabel="Gay" itemValue="Gay" />
+		            <f:selectItem itemLabel="Lesbian" itemValue="Lesbian" />
+		            <f:selectItem itemLabel="Bi" itemValue="Bi" />
+		            
+		        </p:selectOneMenu>
+				<br />
+				<br />
+				<p:commandButton action="#{joinMB.join}" ajax="false" value="Done and excited!" style="width:181px"/>
+				
+			</div>
+			</h:form>
+
+		</div>
+		<div id="footer">
+			
+		</div>	
+</h:body>
+</html>
