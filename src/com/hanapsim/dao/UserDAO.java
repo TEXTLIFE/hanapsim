@@ -22,9 +22,9 @@ public class UserDAO extends GenericDAO<User> {
 //	}
 	
 	
-	public User findUserBySimNumber(String userName) {
+	public User findUserBySimNumber(String simNumber) {
 	Map<String, Object> parameters = new HashMap<String, Object>();
-	parameters.put("userName", userName);
+	parameters.put("simNumber", simNumber);
 
 	return super.findOneResult(User.FIND_BY_SIMNUMBER, parameters);
 }

@@ -114,7 +114,7 @@ public class UserMB extends AbstractMB implements Serializable {
 
 	public String logOut() {
 		getRequest().getSession().invalidate();
-		return "/pages/public/login.xhtml";
+		return "/public/login.xhtml";
 	}
 
 	private HttpServletRequest getRequest() {

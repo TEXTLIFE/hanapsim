@@ -119,7 +119,7 @@ public class LoginMB extends AbstractMB implements Serializable {
 //				System.out.println("Reserved code here!");
 //			}
 
-			return "/pages/protected/index.xhtml";
+			return "/protected/index.xhtml";
 		}
 
 		displayErrorMessageToUser("Check your username/password");

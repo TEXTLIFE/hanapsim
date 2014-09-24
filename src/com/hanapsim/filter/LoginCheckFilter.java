@@ -28,43 +28,15 @@ public class LoginCheckFilter extends AbstractFilter implements Filter {
 		if (allowedURIs == null) {
 			allowedURIs = new ArrayList<String>();
 			allowedURIs.add(fConfig.getInitParameter("loginActionURI"));
-			allowedURIs.add("/ActivPOS/javax.faces.resource/main.css.xhtml");
-			allowedURIs.add("/ActivPOS/javax.faces.resource/login.css.xhtml");
-			allowedURIs.add("/ActivPOS/javax.faces.resource/theme.css.xhtml");
+			allowedURIs.add("/SimPeople/javax.faces.resource/main.css.xhtml");
+			allowedURIs.add("/SimPeople/javax.faces.resource/login.css.xhtml");
+			allowedURIs.add("/SimPeople/javax.faces.resource/theme.css.xhtml");
 			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/primefaces.js.xhtml");
+					.add("/SimPeople/javax.faces.resource/primefaces.js.xhtml");
 			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/primefaces.css.xhtml");
+					.add("/SimPeople/javax.faces.resource/primefaces.css.xhtml");
 			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/jquery/jquery.js.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/messages/messages.png.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/images/favicon.ico.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/images/activpos_logo.png.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/images/activpos_login_body.png.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/images/ui-icons_2e83ff_256x240.png.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/images/ui-icons_38667f_256x240.png.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/watermark/watermark.js.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/images/activpos_login_background.jpg.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/watermark/watermark.css.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/jquery/jquery-plugins.js.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/images/ui-icons_ffffff_256x240.png.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/images/login.png.xhtml");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/ActivPOS/images/login.png");
-			allowedURIs
-					.add("/ActivPOS/javax.faces.resource/ActivPOS/images/icon/close.png");
+					.add("/SimPeople/javax.faces.resource/jquery/jquery.js.xhtml");
 		}
 	}
 

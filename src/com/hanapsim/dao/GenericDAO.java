@@ -18,6 +18,7 @@ abstract class GenericDAO<T> implements Serializable {
 	// private static final EntityManagerFactory emf =
 	// Persistence.createEntityManagerFactory("POSMediaPU");
 
+//	private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("HanapSimPU");
 	private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("HanapSimPU",createEntityManagerFactory());
 	private EntityManager em;
 	private Class<T> entityClass;

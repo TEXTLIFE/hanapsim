@@ -7,8 +7,6 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org
 	<persistence-unit name="HanapSimPU" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<non-jta-data-source>java:comp/env/jdbc/hanapSimDS</non-jta-data-source>
-<!-- 		<class>com.stmpi.dukevisorjsf.models.Inventory</class> -->
-<!-- 		<class>com.stmpi.dukevisorjsf.models.Dp</class> -->
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>		
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
